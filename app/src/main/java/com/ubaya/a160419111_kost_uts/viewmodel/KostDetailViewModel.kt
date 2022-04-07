@@ -18,27 +18,7 @@ class KostDetailViewModel(application: Application) : AndroidViewModel(applicati
     private var queue: RequestQueue?=null
 
     fun fetch(id:String?){
-        queue = Volley.newRequestQueue(getApplication())
-        val url = "http://192.168.1.13/listkost.json"
-        val stringRequest = StringRequest(
-            Request.Method.GET,url,{
-                val sType = object : TypeToken<ArrayList<Kost>>(){}.type
-                val result = Gson().fromJson<ArrayList<Kost>>(it,sType)
-                for (itemKost in result) {
-                    if (itemKost.id == id)
-                    {
-                        kostLD.value = itemKost
-                    }
-                }
-                Log.d("showvolley",it)
-            },
-            {
-                Log.d("errorvolley",it.toString())
-            }
-        ).apply {
-            tag = "TAG"
-        }
-        queue?.add(stringRequest)
+
     }
 
     override fun onCleared() {

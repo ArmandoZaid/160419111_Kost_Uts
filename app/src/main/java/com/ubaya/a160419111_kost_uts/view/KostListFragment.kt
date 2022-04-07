@@ -28,7 +28,7 @@ class KostListFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        GlobalData.currentFragment = "kostlist"
+        GlobalData.currentFragment = "listKost"
         viewModel = ViewModelProvider(this).get(KostListViewModel::class.java)
         viewModel.refresh()
 
