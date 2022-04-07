@@ -45,7 +45,6 @@ class KostListDetailFragment : Fragment() {
             textViewHarga.text = it.harga
             textViewFasilitas.text = it.fasilitas
             textViewAlamat.text = it.alamat
-            imageViewKostDetail.loadImage(it.foto,progressBarPhotoDetail)
         }
     }
 

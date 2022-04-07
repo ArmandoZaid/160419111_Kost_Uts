@@ -54,7 +54,7 @@ class KostListFragment : Fragment() {
             textViewErrorKost.visibility = if(it) View.VISIBLE else View.GONE
         }
         viewModel.loadingLD.observe(viewLifecycleOwner){
-            if(it){//sedang loading
+            if(it){
                 recKost.visibility = View.GONE
                 progressLoadKost.visibility = View.VISIBLE
             }
