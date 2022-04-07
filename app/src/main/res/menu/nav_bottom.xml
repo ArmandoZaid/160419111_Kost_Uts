@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemHome"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemFavorit"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="favorit"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemChat"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="chat"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemProfile"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="profile"
+        app:showAsAction="always" />
+</menu>
