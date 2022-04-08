@@ -29,7 +29,7 @@ class KostListDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         var id = ""
         arguments?.let {
-            id = KostListDetailFragmentArgs.fromBundle(requireArguments()).kostid
+            id = KostListDetailFragmentArgs.fromBundle(requireArguments()).id
         }
         viewModel = ViewModelProvider(this).get(KostDetailViewModel::class.java)
         viewModel.fetch(id)
