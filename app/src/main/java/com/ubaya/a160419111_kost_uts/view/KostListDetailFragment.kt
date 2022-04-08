@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import com.ubaya.a160419046_ubayakost.util.loadImage
 import com.ubaya.a160419111_kost_uts.R
 import com.ubaya.a160419111_kost_uts.viewModel.KostDetailViewModel
 import kotlinx.android.synthetic.main.fragment_detail_kamar_kost.*
