@@ -20,9 +20,4 @@ class KostDetailViewModel(application: Application) : AndroidViewModel(applicati
     fun fetch(id:String?){
 
     }
-
-    override fun onCleared() {
-        super.onCleared()
-        queue?.cancelAll(TAG)
-    }
 }
