@@ -30,7 +30,7 @@
             app:popUpTo="@id/kostList"
             app:popUpToInclusive="true" />
         <argument
-            android:name="kostid"
+            android:name="id"
             app:argType="string" />
         <action
             android:id="@+id/action_kostListDetailFragment_to_itemHome"
