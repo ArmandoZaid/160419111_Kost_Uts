@@ -6,10 +6,10 @@ import android.view.ViewGroup
 import androidx.navigation.NavDirections
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.ubaya.a160419046_ubayakost.util.loadImage
 import com.ubaya.a160419111_kost_uts.GlobalData
 import com.ubaya.a160419111_kost_uts.R
-import com.ubaya.uts160419111.model.Kost
+import com.ubaya.a160419111_kost_uts.model.Kost
+import com.ubaya.a160419111_kost_uts.util.loadImage
 import kotlinx.android.synthetic.main.fragment_detail_kost.view.*
 
 class KostListAdapter(val listKost:ArrayList<Kost>) : RecyclerView.Adapter<KostListAdapter.KostViewHolder>(){

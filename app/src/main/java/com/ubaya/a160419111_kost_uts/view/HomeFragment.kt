@@ -10,8 +10,8 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ubaya.a160419111_kost_uts.GlobalData
 import com.ubaya.a160419111_kost_uts.R
+import com.ubaya.a160419111_kost_uts.model.Kost
 import com.ubaya.a160419111_kost_uts.viewModel.KostListViewModel
-import com.ubaya.uts160419111.model.Kost
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_kost_list.*
 /**
