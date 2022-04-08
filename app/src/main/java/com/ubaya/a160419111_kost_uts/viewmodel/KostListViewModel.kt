@@ -10,7 +10,7 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.ubaya.uts160419111.model.Kost
+import com.ubaya.a160419111_kost_uts.model.Kost
 
 class KostListViewModel(application: Application) : AndroidViewModel(application) {
     val kostLD = MutableLiveData<ArrayList<Kost>>()
