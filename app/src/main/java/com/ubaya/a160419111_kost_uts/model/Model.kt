@@ -1,4 +1,4 @@
-package com.ubaya.uts160419111.model
+package com.ubaya.a160419111_kost_uts.model
 
 data class Kost(
     val id:String?,

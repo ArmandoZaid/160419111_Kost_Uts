@@ -1,4 +1,4 @@
-package com.ubaya.a160419046_ubayakost.util
+package com.ubaya.a160419111_kost_uts.util
 
 import android.view.View
 import android.widget.ImageView
