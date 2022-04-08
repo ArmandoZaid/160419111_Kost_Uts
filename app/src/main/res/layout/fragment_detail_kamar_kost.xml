@@ -92,8 +92,9 @@
         android:id="@+id/textViewAlamat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:text="Rungkut"
-        app:layout_constraintTop_toTopOf="@+id/textAlamat"
-        tools:layout_editor_absoluteX="88dp" />
+        app:layout_constraintStart_toEndOf="@+id/textAlamat"
+        app:layout_constraintTop_toTopOf="@+id/textAlamat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
