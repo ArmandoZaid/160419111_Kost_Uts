@@ -20,4 +20,9 @@ class KostDetailViewModel(application: Application) : AndroidViewModel(applicati
 
 
     }
+
+    override fun onCleared() {
+        super.onCleared()
+        queue?.cancelAll(TAG)
+    }
 }
