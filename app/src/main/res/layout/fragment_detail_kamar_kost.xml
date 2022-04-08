@@ -8,7 +8,7 @@
     tools:context=".view.KostListDetailFragment">
 
     <TextView
-        android:id="@+id/textViewNameKost"
+        android:id="@+id/textViewNamaKost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -22,8 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Nama"
-        app:layout_constraintStart_toEndOf="@+id/textViewNameKost"
-        app:layout_constraintTop_toTopOf="@+id/textViewNameKost" />
+        app:layout_constraintStart_toEndOf="@+id/textViewNamaKost"
+        app:layout_constraintTop_toTopOf="@+id/textViewNamaKost" />
 
     <TextView
         android:id="@+id/textJenis"
@@ -31,8 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Jenis:"
-        app:layout_constraintStart_toStartOf="@+id/textViewNameKost"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNameKost" />
+        app:layout_constraintStart_toStartOf="@+id/textViewNamaKost"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNamaKost" />
 
     <TextView
         android:id="@+id/textViewJenisKos"
