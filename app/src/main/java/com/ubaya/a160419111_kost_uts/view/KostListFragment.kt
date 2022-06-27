@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ubaya.a160419111_kost_uts.viewModel.KostListViewModel
-import com.ubaya.a160419111_kost_uts.GlobalData
 import com.ubaya.a160419111_kost_uts.R
 import kotlinx.android.synthetic.main.fragment_kost_list.*
 /**
@@ -28,7 +27,6 @@ class KostListFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        GlobalData.currentFragment = "listKost"
         viewModel = ViewModelProvider(this).get(KostListViewModel::class.java)
         viewModel.refresh()
 

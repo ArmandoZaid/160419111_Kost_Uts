@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ubaya.a160419111_kost_uts.GlobalData
 import com.ubaya.a160419111_kost_uts.R
 import com.ubaya.a160419111_kost_uts.model.Kost
 import com.ubaya.a160419111_kost_uts.viewModel.KostListViewModel
@@ -32,7 +31,6 @@ class HomeFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        GlobalData.currentFragment = "home"
         viewModel = ViewModelProvider(this).get(KostListViewModel::class.java)
         viewModel.refresh()
 

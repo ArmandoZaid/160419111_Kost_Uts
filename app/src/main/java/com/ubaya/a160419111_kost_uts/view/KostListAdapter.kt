@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.navigation.NavDirections
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
-import com.ubaya.a160419111_kost_uts.GlobalData
 import com.ubaya.a160419111_kost_uts.R
 import com.ubaya.a160419111_kost_uts.model.Kost
 import com.ubaya.a160419111_kost_uts.util.loadImage
@@ -28,12 +27,14 @@ class KostListAdapter(val listKost:ArrayList<Kost>) : RecyclerView.Adapter<KostL
             textJenisKos.text = arraykost.jenis
             buttonDetail.setOnClickListener {
                 var action:NavDirections
-                if(GlobalData.currentFragment =="home"){
+                /*if(GlobalData.currentFragment =="home"){
                     action = HomeFragmentDirections.actionItemHomeToKostListDetailFragment(arraykost.id.toString())
                 }
                 else{
                     action = KostListFragmentDirections.actionKostListToKostListDetailFragment(arraykost.id.toString())
-                }
+                }*/
+                action = KostListFragmentDirections.actionKostListToKostListDetailFragment(arraykost.id.toString())
+
                 Navigation.findNavController(it).navigate(action)
             }
             imageKost.loadImage(arraykost.foto,progressBar)
